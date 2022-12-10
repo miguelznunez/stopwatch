@@ -1,0 +1,63 @@
+body {
+  overflow: hidden;
+  font-family: 'Software Tester 7', sans-serif;
+  background: #496e6e;
+  background: -webkit-radial-gradient(center, #496e6e 0%, #000000 100%);
+  background: -moz-radial-gradient(center, #496e6e 0%, #000000 100%);
+  background: radial-gradient(ellipse at center, #496e6e 0%, #000000 100%);
+}
+
+button{
+  border: 1px dotted rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  width: 70px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+button:hover{
+  border: 1px dotted white;
+  color: white;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#timer h1 {
+  user-select: none;
+  font-size: 7vw;
+  color:white;
+}
+
+.time{
+  display: flex;
+}
+
+#millisecond{
+  font-size: 5vw;
+}
+
+@media(max-width:768px) {
+  #timer h1 {
+    font-size: 4rem;
+  }
+}
+
+@media(max-width:480px) {
+  #timer h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media(max-width:320px) {
+  #timer h1 {
+    font-size: 3rem;
+  }
+}
